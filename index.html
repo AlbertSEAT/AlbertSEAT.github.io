@@ -1,67 +1,11 @@
 <!-- Import the component -->
 <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
 
-<style>
-    /* CSS */
-.button-53 {
-  background-color: #00873E;
-  border: 0 solid #E5E7EB;
-  box-sizing: border-box;
-  color: #FFFFFF;
-  display: flex;
-  font-family: ui-sans-serif,system-ui,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
-  font-size: 3rem;
-  font-weight: 700;
-  justify-content: center;
-  line-height: 1.75rem;
-  padding: .75rem 1.65rem;
-  position: relative;
-  text-align: center;
-  text-decoration: none #000000 solid;
-  text-decoration-thickness: auto;
-  width: 100%;
-  max-width: 1080px;
-  position: relative;
-  cursor: pointer;
-  transform: rotate(-2deg);
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-}
-
-.button-53:focus {
-  outline: 0;
-}
-
-.button-53:after {
-  content: '';
-  position: absolute;
-  border: 1px solid #000000;
-  bottom: 4px;
-  left: 4px;
-  width: calc(100% - 1px);
-  height: calc(100% - 1px);
-}
-
-.button-53:hover:after {
-  bottom: 2px;
-  left: 2px;
-}
-
-@media (min-width: 768px) {
-  .button-53 {
-    padding: .75rem 3rem;
-    font-size: 1.25rem;
-  }
-}
-</style>
-
 <!-- Use model viewer -->
 <body style="background-color:black;" text="#ffffff">
 <model-viewer style="width: 100%; height: 97%;" src="model.glb" ar autoplay="" ar-modes="scene-viewer webxr quick-look" camera-controls poster="seat-logo.png" shadow-intensity="1.14" environment-image="skylit_garage_1k_test.hdr" skybox-image="skylit_garage_1k_test.hdr" exposure="1" shadow-softness="0.78" auto-rotate> 
-    <br><br><br>
-    <button class="button-53" slot="ar-button" id="ar-button">
-        View in your space with AR
+    <button slot="ar-button" id="ar-button" style="background-color: white; border-radius: 4px; border: none; position: absolute; top: 16px; right: 16px; ">
+        Press here to activate AR 📷
     </button>
 </model-viewer>
 <br>
